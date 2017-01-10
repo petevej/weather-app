@@ -7,8 +7,8 @@
 		<!--Optional Bootstrap 3 link-->
 		 <link
 		 rel="stylesheet"
-		 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
-		 integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 
+		 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		 integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
 		 crossorigin="anonymous">
 		<!--Optional Bootstrap 4 Beta link-->
 		<link
@@ -16,30 +16,46 @@
 		href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
 		integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
 		crossorigin="anonymous">
-		<title>New Page</title>
+		<title>WeatherMeNot 4000</title>
 	</head>
 	<body>
+		<br><br>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-3 col-md-3"></div>
-				<div class="col-md-4 col-md-4">
-					<div class="card w-100">
+				<div class="col-lg-3 col-md-3 col-sm-3"></div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div  class="card w-100">
 						<div class="card-block">
 							<div id="header">
-								<h1 class="card-title">Weather App</h1>
+								<h1 class="card-title">WeatherMeNot<em> 4000</em></h1>
 								<h4 class="card-text"><em>Inspired by FreeCodeCamp</em></h4><br>
 							</div>
+							<div id="location">
+								<p>Kuala Lumpur, MY</p>
+							</div>
 							<div id="temp">
-								<p>32<span id="degree">&#8451;</span></p>
+								<p id="degree">32<span id="unit">&#8451;</span></p>
 							</div>
 							<div id="condition">
 								<p>Clouds</p>
 							</div>
 							<div id="icon">
-								<img src='https://cdn1.iconfinder.com/data/icons/hawcons/32/700175-icon-1-cloud-128.png' alt="condition-icon" width="40px"/>
+								<img
+								src="http://openweathermap.org/img/w/03d.png"
+								alt="condition-icon"
+								/>
 							</div>
+							<div id="toggle">
+								<!-- Rounded switch -->
+								<label class="switch">
+								  <input type="checkbox" id="myCheck">
+								  <div class="slider round"></div>
+								</label>
+							</div>
+							<p>  &#176;C/&#176;F</p>
 							<div id="footer">
-								<p><em>By Asomedia Studio</em></p>
+								<p><em>Powered By</em></p>
+								<img src="logo_OpenWeatherMap.svg" alt="OWM-logo" width="200px" style="background-color:#4e4d4a;"/>
 							</div>
 						</div>
 					</div>
